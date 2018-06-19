@@ -1,6 +1,10 @@
 FROM ubuntu:18.04
 MAINTAINER Torsten Schlabach <tschlabach@gmx.net>
 
+# avoid timeouts waiting for user input,
+# especially when it comes to tzdata
+ENV DEBIAN_FRONTEND noninteractive
+
 WORKDIR /data
 
 RUN apt-get update && apt-get install -y \
