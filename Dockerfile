@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER Kevin Krummenauer <kevin@whiledo.de>
+FROM ubuntu:18.04
+MAINTAINER Torsten Schlabach <tschlabach@gmx.net>
 
 WORKDIR /data
 
