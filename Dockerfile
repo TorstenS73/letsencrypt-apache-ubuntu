@@ -4,6 +4,7 @@ MAINTAINER Torsten Schlabach <tschlabach@gmx.net>
 WORKDIR /data
 
 RUN apt-get update && apt-get install -y \
+	tzdata \
         apache2 \
         git
 
